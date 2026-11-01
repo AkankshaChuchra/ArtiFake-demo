@@ -3,475 +3,343 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
+
+  <!-- ============================================================
+       TODO: fill in the placeholders below (title, description, link).
+       ============================================================ -->
+  <meta name="title" content="ArtiFake: A Taxonomy-Driven Approach for Simulating Perceptual Artifacts in Synthetic Speech">
+  <meta name="description" content="Simulating Synthetic Speech Artifacts">
+  <!-- <meta name="keywords" content="ArtiFake, KEYWORD1, KEYWORD2, KEYWORD3"> -->
+  <meta name="author" content="Akanksha Chuchra, Nikita Goswami, Sudeepta Mishra, Abhinav Dhall">
+  <!-- <meta name="robots" content="index, follow"> -->
+
+  <!-- Social media previews -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:title" content="ArtiFake: A Taxonomy-Driven Approach for Simulating Perceptual Artifacts in Synthetic Speech">
+  <meta property="og:description" content="Simulating Synthetic Speech Artifacts">
+  <meta property="og:url" content="https://YOUR_USERNAME.github.io/YOUR_REPO/">
+  <meta property="og:image" content="https://YOUR_USERNAME.github.io/YOUR_REPO/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
+  <!-- <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:description" content="SHORT_DESCRIPTION_OF_ARTIFAKE">
+  <meta name="twitter:image" content="https://YOUR_USERNAME.github.io/YOUR_REPO/static/images/social_preview.png"> -->
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
+  <!-- TODO: page title shown in the browser tab -->
+  <title>ArtiFake Demo</title>
+
+  <!-- TODO: replace static/images/favicon.ico with your own icon -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-
-
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <!-- Styles for the audio samples and the methodology figure -->
+  <style>
+/* Styles for the Audio Samples dropdowns and the Methodology figure.
+   Uses the color variables defined in index.css. */
+
+/* ---------- Audio samples ---------- */
+.audio-samples .samples-intro { margin-bottom: 1.25rem; }
+
+.audio-samples .samples-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.audio-samples .samples-toolbar button {
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.3rem 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: var(--background-primary);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.audio-samples .samples-toolbar button:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.audio-category {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  margin-bottom: 0.75rem;
+  background: var(--background-primary);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.audio-category > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.95rem 1.15rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  user-select: none;
+}
+.audio-category > summary::-webkit-details-marker { display: none; }
+.audio-category > summary:hover { background: var(--background-secondary); }
+.audio-category > summary:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: -2px;
+}
+.audio-category .cat-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 999px;
+  background: var(--background-accent);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.audio-category .cat-count {
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+.audio-category .cat-chevron {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid var(--text-secondary);
+  border-bottom: 2px solid var(--text-secondary);
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 0.25rem;
+}
+.audio-category[open] .cat-chevron { transform: rotate(-135deg); }
+.audio-category[open] > summary { border-bottom: 1px solid var(--border-color); }
+
+.audio-category .cat-body { padding: 1rem 1.15rem 1.15rem; }
+.audio-category .cat-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+/* 2-column grid of clips (1 column on phones) */
+.audio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+@media (max-width: 640px) {
+  .audio-grid { grid-template-columns: 1fr; }
+}
+
+.audio-card {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.8rem;
+  background: var(--background-secondary);
+}
+.audio-card .audio-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.45rem;
+  color: var(--text-primary);
+}
+.audio-card audio {
+  width: 100%;
+  display: block;
+}
+.audio-card .audio-caption {
+  margin-top: 0.55rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+/* ---------- Methodology figure ---------- */
+.paper-figure {
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+.paper-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  background: #fff;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+}
+.paper-figure figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  text-align: left;
+}
+  </style>
+
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
 </head>
 <body>
 
-
-  <!-- Scroll to Top Button -->
+  <!-- Scroll to top button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
+
+  <!-- ===================== TITLE / AUTHORS / LINKS ===================== -->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+
+            <!-- TODO: your paper title -->
+            <h1 class="title is-1 publication-title">ArtiFake: PAPER_TITLE</h1>
+
+            <!-- TODO: author names, links, institution and venue -->
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Akanksha Chuchra</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <span class="author-block"><a href="FIRST_AUTHOR_LINK" target="_blank">Akanksha Chuchra</a></span>
+              <span class="author-block"><a href="SECOND_AUTHOR_LINK" target="_blank">Nikita Goswami</a></span>
+              <span class="author-block"><a href="THIRD_AUTHOR_LINK" target="_blank">Sudeepta Mishra</a><</span>
+               <span class="author-block"><a href="THIRD_AUTHOR_LINK" target="_blank">Abhinav Dhall</a></span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Institution Name<br>Conference name and year</span>
+              <!-- TODO: remove this line if there is no equal contribution -->
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Jumps to the audio demo on this page -->
+                <span class="link-block">
+                  <a href="#audio-samples" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-volume-up"></i></span>
+                    <span>Audio Samples</span>
                   </a>
                 </span>
 
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                <!-- TODO: paper PDF link (remove this block if not available yet) -->
+                <!-- <span class="link-block">
+                  <a href="PAPER_PDF_LINK" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                  </a>
+                </span> -->
+
+                <!-- TODO: code link (remove this block if there is no code yet) -->
+                <!-- <span class="link-block">
+                  <a href="CODE_LINK" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+                <!-- TODO: arXiv link (remove this block if not on arXiv yet) -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/ARXIV_ID" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+              </div>
             </div>
+
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
       </div>
     </div>
   </section>
-<!--End paper poster -->
 
 
+  <!-- ===================== ABSTRACT ===================== -->
+  <section class="section hero is-light" id="abstract">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <!-- TODO: paste your abstract here. Use a new <p> for each paragraph. -->
+            <p>
+              The growing prevalence of synthetic speech on digital media has highlighted the need to move beyond binary deepfake detection and understand why speech sounds synthetic. 
+              Perceptually identifiable artifacts can provide important cues to the synthetic origin of speech. However, their systematic investigation remains challenging. Existing studies primarily rely on naturally occurring artifacts in synthetic speech. 
+              Such artifacts are unevenly distributed, occur without control, and are often characterized through subjective descriptions that lack consistent terminology. 
+              To address these limitations, we introduce ArtiFake, a taxonomy-driven framework for systematically simulating perceptually identifiable artifacts in synthetic speech. We first develop a structured taxonomy that systematically categorizes perceptually identifiable artifacts. 
+              Guided by this taxonomy, we design targeted simulation strategies based on transcript-level and signal-level manipulations. 
+              These strategies enable the controlled introduction of specific artifacts into speech samples. Using this framework, we construct the ArtiFake dataset, comprising approximately 10k audio samples spanning 10 distinct artifact classes. 
+              Furthermore, we investigate the capabilities of recent audio-language models to recognize and characterize these artifacts, revealing the limited understanding of these models.
+              By enabling controlled artifact simulation and more balanced representation across artifact classes, ArtiFake lays the foundation for systematic artifact-level analysis, perceptually grounded evaluation, and the development of explainable audio deepfake detection systems..
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
+
+  <!-- ===================== AUDIO SAMPLES ===================== -->
+  <!-- The categories and clips are listed in static/js/audio-samples.js -->
+  <section class="section audio-samples" id="audio-samples">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Audio Samples</h2>
+      <div class="content has-text-justified samples-intro">
+        <!-- TODO: one or two sentences introducing the demo -->
+        <p>
+          Demo samples from each of the 10 categories. Click a category to expand it and listen to its samples.
+        </p>
+      </div>
+      <div class="samples-toolbar">
+        <button type="button" id="expand-all-samples">Expand all</button>
+        <button type="button" id="collapse-all-samples">Collapse all</button>
+      </div>
+      <div id="audio-categories"></div>
+      <noscript><p>Please enable JavaScript to listen to the audio samples.</p></noscript>
+    </div>
+  </section>
+
+
+  <!-- ===================== METHODOLOGY ===================== -->
+  <section class="section hero is-light" id="methodology">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Methodology</h2>
+      <!-- TODO: put your diagram at static/images/methodology.png (or .svg / .jpg and change the path).
+           Clicking the figure opens it full size in a new tab. -->
+      <figure class="paper-figure">
+        <a href="static/images/methodology.png" target="_blank" title="Open full size">
+          <img src="static/images/methodology.png" alt="Overview of the ArtiFake methodology" loading="lazy">
+        </a>
+        <figcaption>
+          <!-- TODO: figure caption -->
+          <strong>Figure 1.</strong> Overview of the proposed method. Describe the main stages of the pipeline here.
+        </figcaption>
+      </figure>
+      <div class="content has-text-justified">
+        <!-- TODO: short explanation of the method (optional, delete if not needed) -->
+        <!-- <p>
+          Briefly explain the main steps of the method shown in the figure.
+        </p> -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== BIBTEX ===================== -->
+  <!-- TODO: fill in your citation (or delete this section until the paper is out) -->
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
@@ -480,41 +348,286 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@inproceedings{artifake2026,
+  title={PAPER_TITLE},
+  author={Chuchra, Akanksha and Second Author and Third Author},
+  booktitle={CONFERENCE_NAME},
+  year={2026}
 }</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section> -->
 
+  </main>
 
+  <!-- Footer: keep the template credit (required by its CC BY-SA 4.0 license) -->
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- BibTeX copy button and scroll-to-top button -->
+  <script>
+// Trimmed from the Academic Project Page Template's index.js:
+// keeps only the BibTeX copy button and the scroll-to-top button,
+// since this page has no carousels or "More Works" dropdown.
 
-    <!-- End of Statcounter Code -->
+// Copy BibTeX to clipboard
+function copyBibTeX() {
+  const bibtexElement = document.getElementById('bibtex-code');
+  const button = document.querySelector('.copy-bibtex-btn');
+  if (!bibtexElement || !button) return;
+  const copyText = button.querySelector('.copy-text');
 
-  </body>
-  </html>
+  function done() {
+    button.classList.add('copied');
+    copyText.textContent = 'Copied';
+    setTimeout(function () {
+      button.classList.remove('copied');
+      copyText.textContent = 'Copy';
+    }, 2000);
+  }
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(bibtexElement.textContent).then(done).catch(fallback);
+  } else {
+    fallback();
+  }
+
+  function fallback() {
+    const textArea = document.createElement('textarea');
+    textArea.value = bibtexElement.textContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    done();
+  }
+}
+
+// Scroll to top
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+window.addEventListener('scroll', function () {
+  const scrollButton = document.querySelector('.scroll-to-top');
+  if (!scrollButton) return;
+  if (window.pageYOffset > 300) {
+    scrollButton.classList.add('visible');
+  } else {
+    scrollButton.classList.remove('visible');
+  }
+});
+  </script>
+
+  <!-- =================== AUDIO SAMPLES: EDIT THE LIST BELOW =================== -->
+  <script>
+/*
+  =========================================================================
+  AUDIO SAMPLES: EDIT THIS LIST
+  =========================================================================
+  Each category becomes one dropdown on the page.
+
+    name:        category title shown on the dropdown
+    description: text shown at the top of the opened category ("" to hide)
+    samples:     the clips in this category, shown in 2 columns
+        src      path to the audio file in your repo
+        label    short title above the player ("" to hide)
+        caption  text shown under the player ("" to hide)
+
+  Put the audio files in folders like:
+    static/audio/category1/sample1.mp3
+    static/audio/category1/sample2.mp3
+    static/audio/category2/sample1.mp3   ...
+
+  Add or remove samples freely; the layout adjusts by itself.
+  MP3 keeps the repo small, but WAV also works.
+  =========================================================================
+*/
+const CATEGORIES = [
+  {
+    name: "Lack of Expressiveness",
+    description: "Monotonous speech with flat intonation",
+    samples: [
+      { src: "static/audio/category1/sample1.mp3", label: "Sample 1", caption: "Text describing this sample." },
+      { src: "static/audio/category1/sample2.mp3", label: "Sample 2", caption: "Text describing this sample." },
+      { src: "static/audio/category1/sample3.mp3", label: "Sample 3", caption: "Text describing this sample." },
+      { src: "static/audio/category1/sample4.mp3", label: "Sample 4", caption: "Text describing this sample." }
+    ]
+  },
+  {
+    name: "Unnatural Stress / Pauses",
+    description: "Awkward pauses or word-stress in the speech affecting the fluency",
+    samples: [
+      { src: "static/audio/category2/sample1.mp3", label: "Sample 1", caption: "Text describing this sample." },
+      { src: "static/audio/category2/sample2.mp3", label: "Sample 2", caption: "Text describing this sample." }
+    ]
+  },
+  {
+    name: "Speech Rate Irregularities",
+    description: "Abnormal speed of delivery, typically excessively fast",
+    samples: [
+      { src: "static/audio/category3/sample1.mp3", label: "Sample 1", caption: "Text describing this sample." },
+      { src: "static/audio/category3/sample2.mp3", label: "Sample 2", caption: "Text describing this sample." }
+    ]
+  },
+  {
+    name: "Mishandled Non-Standard Words",
+    description: "Incorrect spoken rendering of symbols, dates, units, abbreviations",
+    samples: [
+      { src: "static/audio/category4/sample1.mp3", label: "Sample 1", caption: "Text describing this sample." },
+      { src: "static/audio/category4/sample2.mp3", label: "Sample 2", caption: "Text describing this sample." }
+    ]
+  },
+  {
+    name: "Unnatural Hesitation Markers",
+    description: "Unnatural vocal rendering of hesitation sounds such as um, uh, or huh",
+    samples: [
+      { src: "static/audio/category5/sample1.mp3", label: "Sample 1", caption: "Text describing this sample." },
+      { src: "static/audio/category5/sample2.mp3", label: "Sample 2", caption: "Text describing this sample." }
+    ]
+  },
+  {
+    name: "Word / Phrase Repetition",
+    description: "Unintentional repetition of words / phrases",
+    samples: [
+      { src: "static/audio/category6/sample1.mp3", label: "Sample 1", caption: "Text describing this sample." },
+      { src: "static/audio/category6/sample2.mp3", label: "Sample 2", caption: "Text describing this sample." }
+    ]
+  },
+  {
+    name: "Buzzy Voice",
+    description: "Hollow, buzz-like voice texture with a perceived doubled-voice effect",
+    samples: [
+      { src: "static/audio/category7/sample1.mp3", label: "Sample 1", caption: "Text describing this sample." },
+      { src: "static/audio/category7/sample2.mp3", label: "Sample 2", caption: "Text describing this sample." }
+    ]
+  },
+  {
+    name: "Jittery / Shaky Voice",
+    description: "Unstable, trembling voice texture with rapid, irregular fluctuations",
+    samples: [
+      { src: "static/audio/category8/sample1.mp3", label: "Sample 1", caption: "Text describing this sample." },
+      { src: "static/audio/category8/sample2.mp3", label: "Sample 2", caption: "Text describing this sample." }
+    ]
+  },
+  {
+    name: "Continuous Background Artifacts",
+    description: "Persistent background disturbances audible alongside speech",
+    samples: [
+      { src: "static/audio/category9/sample1.mp3", label: "Sample 1", caption: "Text describing this sample." },
+      { src: "static/audio/category9/sample2.mp3", label: "Sample 2", caption: "Text describing this sample." }
+    ]
+  },
+  {
+    name: "Transient Artifacts",
+    description: "Brief, abrupt disturbances such as clicks or glitches",
+    samples: [
+      { src: "static/audio/category10/sample1.mp3", label: "Sample 1", caption: "Text describing this sample." },
+      { src: "static/audio/category10/sample2.mp3", label: "Sample 2", caption: "Text describing this sample." }
+    ]
+  }
+];
+
+/* Set to true if only one category should be open at a time. */
+const ONLY_ONE_OPEN = false;
+
+/* Set to true to open the first category when the page loads. */
+const OPEN_FIRST = false;
+
+
+/* ---------- No need to edit below this line ---------- */
+(function renderAudioSamples() {
+  function init() {
+    const container = document.getElementById("audio-categories");
+    if (!container) return;
+
+    function el(tag, className, text) {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text) node.textContent = text;
+      return node;
+    }
+
+    CATEGORIES.forEach(function (cat, i) {
+      const details = el("details", "audio-category");
+      if (OPEN_FIRST && i === 0) details.open = true;
+
+      const summary = el("summary");
+      summary.appendChild(el("span", "cat-index", String(i + 1)));
+      summary.appendChild(el("span", "cat-name", cat.name));
+      const n = cat.samples.length;
+      summary.appendChild(el("span", "cat-count", n + (n === 1 ? " sample" : " samples")));
+      summary.appendChild(el("span", "cat-chevron"));
+      details.appendChild(summary);
+
+      const body = el("div", "cat-body");
+      if (cat.description) body.appendChild(el("p", "cat-description", cat.description));
+
+      const grid = el("div", "audio-grid");
+      cat.samples.forEach(function (s) {
+        const card = el("div", "audio-card");
+        if (s.label) card.appendChild(el("div", "audio-label", s.label));
+        const audio = document.createElement("audio");
+        audio.controls = true;
+        audio.preload = "none"; // download only when played
+        audio.src = s.src;
+        card.appendChild(audio);
+        if (s.caption) card.appendChild(el("p", "audio-caption", s.caption));
+        grid.appendChild(card);
+      });
+      body.appendChild(grid);
+      details.appendChild(body);
+
+      details.addEventListener("toggle", function () {
+        if (!details.open) {
+          details.querySelectorAll("audio").forEach(function (a) { a.pause(); });
+        } else if (ONLY_ONE_OPEN) {
+          container.querySelectorAll("details[open]").forEach(function (d) {
+            if (d !== details) d.open = false;
+          });
+        }
+      });
+
+      container.appendChild(details);
+    });
+
+    // Only one clip plays at a time
+    container.addEventListener("play", function (e) {
+      container.querySelectorAll("audio").forEach(function (a) {
+        if (a !== e.target) a.pause();
+      });
+    }, true);
+
+    const expandBtn = document.getElementById("expand-all-samples");
+    const collapseBtn = document.getElementById("collapse-all-samples");
+    if (expandBtn) expandBtn.addEventListener("click", function () {
+      container.querySelectorAll("details").forEach(function (d) { d.open = true; });
+    });
+    if (collapseBtn) collapseBtn.addEventListener("click", function () {
+      container.querySelectorAll("details").forEach(function (d) { d.open = false; });
+    });
+    if (ONLY_ONE_OPEN && collapseBtn && expandBtn) expandBtn.style.display = "none";
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+  </script>
+
+</body>
+</html>
